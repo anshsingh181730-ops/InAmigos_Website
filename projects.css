@@ -1,0 +1,583 @@
+/* ==============================
+   GENERAL STYLING
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #176b45;
+    font-size: 19px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.green-text {
+    color: #16834f;
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #16834f;
+}
+
+/* JOIN US BUTTON */
+
+.nav-btn {
+    display: inline-block;
+    background: #16834f;
+    color: white;
+    padding: 11px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #145c39;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.projects-hero {
+    min-height: 470px;
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 27, 0.75),
+            rgba(0, 45, 27, 0.75)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 850px;
+    color: white;
+}
+
+.hero-tag,
+.section-tag {
+    color: #e5bb4d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #e5bb4d;
+}
+
+.hero-content p {
+    color: #eee;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #e5bb4d;
+    color: #173e2b;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   INTRODUCTION
+============================== */
+
+.projects-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 85px 6% 60px;
+}
+
+.projects-intro h2 {
+    font-size: 36px;
+    color: #175d3d;
+    margin: 12px 0;
+}
+
+.projects-intro p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   ALL PROJECTS
+============================== */
+
+.all-projects {
+    padding: 20px 8% 90px;
+}
+
+
+/* ==============================
+   PROJECT ROW
+============================== */
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 85px;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* ==============================
+   PROJECT IMAGE
+============================== */
+
+.project-image {
+    flex: 1;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.project-label {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    background: #175d3d;
+    color: white;
+    padding: 8px 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+/* ==============================
+   PROJECT INFORMATION
+============================== */
+
+.project-info {
+    flex: 1;
+}
+
+.project-tag {
+    color: #c49a32;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.project-info h2 {
+    font-size: 35px;
+    color: #175d3d;
+    margin: 10px 0 5px;
+}
+
+.project-info h4 {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-info p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.project-info h3 {
+    font-size: 17px;
+    color: #175d3d;
+    margin-bottom: 10px;
+}
+
+.project-info ul {
+    padding-left: 20px;
+}
+
+.project-info li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 9px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   JOIN SECTION
+============================== */
+
+.join-section {
+    padding: 85px 8%;
+    background: #175d3d;
+    text-align: center;
+}
+
+.join-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.join-content h2 {
+    font-size: 36px;
+    color: white;
+    margin: 12px 0;
+}
+
+.join-content p {
+    font-size: 15px;
+    color: #e4eee8;
+    margin-bottom: 30px;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #e5bb4d;
+    color: #173e2b;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    background: #102d22;
+    color: white;
+    padding: 55px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer h2 {
+    color: #e5bb4d;
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    color: #e5bb4d;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #d1d9d4;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #d1d9d4;
+    margin-bottom: 9px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e5bb4d;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .project-row {
+        gap: 30px;
+    }
+
+    .project-image img {
+        height: 320px;
+    }
+
+    .project-info h2 {
+        font-size: 29px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 4%;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        padding: 9px 22px;
+    }
+
+    .projects-hero {
+        min-height: 400px;
+        padding: 50px 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .projects-intro {
+        padding: 60px 6% 40px;
+    }
+
+    .projects-intro h2 {
+        font-size: 28px;
+    }
+
+    .all-projects {
+        padding: 20px 6% 50px;
+    }
+
+    .project-row,
+    .project-row.reverse {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 60px;
+        align-items: stretch;
+    }
+
+    .project-image img {
+        height: 250px;
+    }
+
+    .project-info h2 {
+        font-size: 28px;
+    }
+
+    .project-info h4 {
+        font-size: 15px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .join-content h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .project-info h2 {
+        font-size: 25px;
+    }
+
+}

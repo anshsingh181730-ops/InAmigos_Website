@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Registration | InAmigos Foundation</title>
+
+    <link rel="stylesheet" href="volunteer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <a href="index.html#home" class="logo">
+            <img src="images/logo.jpg" alt="InAmigos Foundation Logo">
+            <span>InAmigos <span class="green-text">Foundation</span></span>
+        </a>
+
+        <!-- NAVIGATION LINKS -->
+        <ul class="nav-links">
+
+            <li><a href="index.html#home">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="index.html#impact">Our Impact</a></li>
+
+            <li><a href="community.html">Community</a></li>
+
+            <li><a href="volunteer.html" class="active">Become a Volunteer</a></li>
+
+            <li><a href="index.html#contact">Contact</a></li>
+
+        </ul>
+
+        <!-- JOIN BUTTON -->
+        <a href="volunteer.html" class="nav-btn">Join Us</a>
+
+    </nav>
+</header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="volunteer-hero">
+
+        <div class="hero-content">
+
+            <span>JOIN OUR MOVEMENT</span>
+
+            <h1>
+                Become a Volunteer.
+                <br>
+                <span>Be the Change.</span>
+            </h1>
+
+            <p>
+                Your time, kindness and dedication can make a
+                meaningful difference. Join our community and
+                help us create a better tomorrow.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTRATION SECTION -->
+
+    <section class="registration-section">
+
+        <div class="registration-heading">
+
+            <span>VOLUNTEER REGISTRATION</span>
+
+            <h2>Let's Make a Difference Together</h2>
+
+            <p>
+                Fill in the details below and tell us how you
+                would like to contribute towards society.
+            </p>
+
+        </div>
+
+
+        <div class="form-container">
+
+            <form action="#" method="post">
+
+
+                <!-- SECTION A: PERSONAL INFORMATION -->
+
+                <div class="form-section">
+
+                    <div class="form-title">
+                        <span>01</span>
+                        <h3>Personal Information</h3>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name"
+                                placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone"
+                                placeholder="Enter mobile number"
+                                pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age"
+                                min="16" max="100"
+                                placeholder="Enter your age" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city"
+                                placeholder="Enter your city" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="occupation">Occupation</label>
+
+                            <select id="occupation">
+                                <option value="">Select occupation</option>
+                                <option>Student</option>
+                                <option>Working Professional</option>
+                                <option>Business Owner</option>
+                                <option>Teacher</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECTION B: SOCIAL WORK EXPERIENCE -->
+
+                <div class="form-section social-section">
+
+                    <div class="form-title">
+                        <span>02</span>
+                        <h3>Social Work Experience</h3>
+                    </div>
+
+                    <p class="section-description">
+                        We believe everyone has the ability to help
+                        others. Tell us about your previous social
+                        activities and experiences.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Have you ever participated in social work? *
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input type="radio" name="experience"
+                                    value="Yes" required>
+                                Yes
+                            </label>
+
+                            <label>
+                                <input type="radio" name="experience"
+                                    value="No">
+                                No, but I would love to start!
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="frequency">
+                            How many times have you helped someone
+                            or participated in social activities?
+                        </label>
+
+                        <select id="frequency">
+
+                            <option value="">Select your experience</option>
+                            <option>Once</option>
+                            <option>2–5 times</option>
+                            <option>6–10 times</option>
+                            <option>More than 10 times</option>
+                            <option>I regularly participate</option>
+                            <option>Not yet, but I want to begin</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            What kind of social work have you done?
+                        </label>
+
+                        <p class="small-text">
+                            You can select multiple activities.
+                        </p>
+
+                        <div class="checkbox-grid">
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Education">
+                                Teaching Children
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Food Distribution">
+                                Food Distribution
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Environment">
+                                Tree Plantation
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Animal Welfare">
+                                Animal Welfare
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Clothes Distribution">
+                                Clothes Distribution
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Community Service">
+                                Community Service
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Blood Donation">
+                                Blood Donation
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="socialwork"
+                                    value="Other">
+                                Other Activities
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="story">
+                            Describe one social activity you have participated in.
+                        </label>
+
+                        <textarea id="story" rows="5"
+                            placeholder="Tell us about your experience, what you did and how it helped someone..."></textarea>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Have you ever uploaded photographs
+                            of your social work?
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input type="radio" name="photographs"
+                                    value="Yes">
+                                Yes
+                            </label>
+
+                            <label>
+                                <input type="radio" name="photographs"
+                                    value="No">
+                                No
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECTION C: VOLUNTEERING INTEREST -->
+
+                <div class="form-section">
+
+                    <div class="form-title">
+                        <span>03</span>
+                        <h3>Your Volunteering Interests</h3>
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="reason">
+                            Why do you want to join InAmigos Foundation? *
+                        </label>
+
+                        <textarea id="reason" rows="4"
+                            placeholder="Tell us why you want to become a volunteer..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+
+                            <label for="project">
+                                Which project interests you?
+                            </label>
+
+                            <select id="project">
+
+                                <option value="">Select a project</option>
+                                <option>Project SEVA</option>
+                                <option>Project BACHPANSHALA</option>
+                                <option>Project JEEV</option>
+                                <option>Project UDAAN</option>
+                                <option>Project PRAKRITI</option>
+                                <option>Project VIKAS</option>
+                                <option>Any Project</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="time">
+                                How much time can you contribute?
+                            </label>
+
+                            <select id="time">
+
+                                <option value="">Select availability</option>
+                                <option>1–2 hours per week</option>
+                                <option>3–5 hours per week</option>
+                                <option>6–10 hours per week</option>
+                                <option>More than 10 hours per week</option>
+                                <option>Flexible</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="skills">
+                            What skills can you contribute?
+                        </label>
+
+                        <textarea id="skills" rows="3"
+                            placeholder="For example: Teaching, communication, photography, event management..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <div class="submit-section">
+
+                    <p>
+                        Every contribution matters.
+                        Thank you for your interest in making a difference!
+                    </p>
+
+                    <button type="submit" class="submit-btn">
+                        Register as Volunteer →
+                    </button>
+
+                    <a href="index.html" class="back-link">
+                        ← Back to Homepage
+                    </a>
+
+                    <small class="form-note">
+                        This is a frontend demonstration.
+                        Your information will not be stored or submitted.
+                    </small>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <h3>InAmigos Foundation</h3>
+
+        <p>
+            Uniting Minds for Change.
+            Together, let's create a better tomorrow.
+        </p>
+
+        <a href="index.html">Back to Home</a>
+
+        <p class="copyright">
+            © 2026 InAmigos Foundation. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
